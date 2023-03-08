@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example Layout</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .text {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    .image {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      
+      .text, .image {
+        flex: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <h1>Left Side Content</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget orci at ipsum congue bibendum id vel libero. Vivamus porttitor felis sit amet ante rutrum, sed egestas eros malesuada. Ut at ipsum nec tellus interdum tempus non non magna.</p>
+    </div>
+    <div class="image">
+      <img src="https://via.placeholder.com/500x500" alt="Right Side Image">
+    </div>
+  </div>
+</body>
+</html>
