@@ -11,13 +11,13 @@
   const intervalId = setInterval(() => {
     // increment the counters
     countCustomersServed += 200;
-    countRoomsAvailable += 5;
+    countRoomsAvailable += 3;
     countHappyCustomers += 20;
     countProfessionalStaffs += 5;
 
     // update the counter elements
     customersServed.innerText = (countCustomersServed < 1000 ? countCustomersServed.toString() + '+' : '1000+');
-    roomsAvailable.innerText = (countRoomsAvailable < 18 ? countRoomsAvailable.toString() + '+' : '18+');
+    roomsAvailable.innerText = (countRoomsAvailable < 18 ? countRoomsAvailable.toString() + '+' : '15+');
     happyCustomers.innerText = (countHappyCustomers < 98.9 ? countHappyCustomers.toFixed(1) + '%' : '98.9%');
     professionalStaffs.innerText = (countProfessionalStaffs < 25 ? countProfessionalStaffs.toString() + '+' : '25+');
 
