@@ -34,12 +34,11 @@
 
 </style>
 </head>
-<body>
+<body onload="playMusic()">
 
-<audio autoplay>
-  <source src="music.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<audio id="bg-music">
+      <source src="music.mp3" type="audio/mpeg">
+   </audio>
 
 <header role="banner">
 <nav class="navbar navbar-expand-md navbar-dark bg-light">
@@ -428,6 +427,13 @@ Close to Santacruz Domestic Airport (CST1),<br> Vile Parle(E), Mumbai - 400057</
   gtag('config', 'UA-23581568-13');
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a18b5a42db3a3b7","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}' crossorigin="anonymous"></script>
+
+<script>
+      function playMusic() {
+        var audio = document.getElementById("bg-music");
+        audio.play();
+      }
+    </script>
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/luxuryhotel/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Mar 2023 09:46:09 GMT -->
